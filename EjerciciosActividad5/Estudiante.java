@@ -40,6 +40,14 @@ public class Estudiante {
 
   }
 
+  public String obtenerNotas() {
+    String notasString = "";
+    for (int i = 0; i < notas.length; i++) {
+      notasString += notas[i] + " ";
+    }
+    return notasString;
+  }
+
   public void calcularMatricula() {
     if (carrera.contains("ingenieria")) {
       matricula = 2000000;
